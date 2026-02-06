@@ -1,0 +1,71 @@
+Padroes estruturais: como as classes e objetos são organizados e conectados.
+
+Adapter: conecta interfaces incompativeis;
+facade: simplifica o acesso a subsistemas complexos
+decorator: adiciona novas responsabilidades sem alterar as classes já existentes
+
+adapter: permite que classes com interfaces incompativeis trabalhem juntas
+- adaptador, que converte a interface em uma em que o sistema espera. Traduação entre duas interfaces que nao se comunicam diretamente.
+codigos legados: codigos antigos
+traduz e entrega o que está sendo esperado.
+
+facade: fornece uma interface simples para um conjunto de classes mais complexas
+ele esconde a complexidade interna e oferece ao cliente uma forma mais facil de usar o sistema.
+simplificador de varios outros subsistemas
+interpreta a ordem de chamada dos sistemas, qual que deve ser ativada primeiro e qual a função de cada classe.
+
+CENTRALIZA o acesso aos subsistemas. Organizador
+
+com o facade cria uma classe que coordena todas as etapas. Interface simplificada
+
+quando? Reduzir dependencias, facilitar uso de API, organizar acesso a subsistemas.
+
+Decorator: padrao que permite adicionar novas responsablidades a um objeto sem alterar a classe original.
+envolve o objeto com outro objeto que acrescenta comportamento
+"reembrulhar" o pacote com uma nova função. Reencapsula objeto. Muitas classes fica dificil manutenção
+
+atuação de cada um:
+adapter: interface
+Facade: conjunto de classes
+decorator: um objeto
+
+nenhum altera as classes.
+
+inter-relação entre padroes comportamentais e estruturais 
+
+um cria e trata classes e o outro trata de como isso tudo se comunica. Eles se completam
+
+
+Inversão de controle - conceito, ideia, que vai ser colocada em prática pela injeção de dependencia
+
+traz pra dentro do sistema principal as funcinolidades executadas por blocos externos.
+
+dependencias - "comodos" de casa. Blocos de código sendo dependencias com suas funcionalidades.
+
+Injeção de dependencia:
+Técnica que vai ser aplicada pra fazer a inversão de controle funcionar.
+permite que receba de fora o que precisa, sem precisar ser instanciada.
+A classe é um objeto e não é responsavel por criar objetos, só utiliza o que vem de fora
+
+tudo corrobora com o proposito do desmembramento das dependencias das heranças.
+ter cada vez mais classes independentes.
+
+Conceito parecido com Strategy e Factory
+via framework é automatizada (grosseiramente falando)
+
+metodo é mais manual
+
+
+AULA 06
+testes unitarios são testes automatizados!
+validação de metodos e classes individuais
+
+teste é uma evolução continua
+inversão de controle - conceito. Tirar o dominio de dentro da classe
+injeção de dependencia - execução. Técnica aplicada pra isso
+
+teste da menor unidade possivel
+
+importar classes de teste
+Mocks e Stubs - cria um objeto fake que não precisa da injeção de dependencoa
+
